@@ -95,6 +95,7 @@ git blame <file>
 # To sync a fork with the master repo:
 git remote add upstream git@github.com:<username>/<repo>.git # Set a new repo
 git remote -v                                                # Confirm new remote repo
+git remote remove [name of the remote]			     # To delete the remote for local repository
 git fetch upstream                                           # Get branches
 git branch -va                                               # List local - remote branches
 git checkout master                                          # Checkout local master branch
