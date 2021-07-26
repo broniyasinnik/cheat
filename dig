@@ -1,0 +1,36 @@
+# Domain information Groper (dig)
+
+$ dig @сервер доменное.имя тип записи флаги
+
+# To query google domain
+$ dig google.com
+
+# Get short version of reply
+$ dig google.com +short
+
+# To not print result to stdout
+$ dig google.com +noall
+
+# To print specific section of the reply
+$ dig google.com +noall +answer
+
+
+# Get anwer for a list of sites in the file sites.txt
+$ dig -f sites.txt +noall +answer
+
+# Get only the specific typy records (MX, NS, A, TXT, ANY)  of the answer
+$ dig google.com MX +noall +answer
+$ dig google.com NS +noall +answer
+$ dig google.com A +noall +answer
+$ dig google.com TXT +noall +answer
+$ dig google.com ANY +noall +answer
+
+# To get answer from specific DNS server
+# if no DNS server supplied use the DNS servers in (/etc/resolv.conf) 
+$ dig @8.8.8.8 google.com +noall +answer
+
+# To get the domain name by IP
+$ dig -x 87.250.250.242
+$ dig -x 87.250.250.242 +short
+
+

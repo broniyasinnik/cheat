@@ -1,0 +1,15 @@
+# list the currently active competitions
+kaggle competitions list
+
+# download files associated with a competition
+kaggle competitions download -c [COMPETITION]
+
+#make a competition submission
+kaggle competitions submit -c [COMPETITION] -f [FILE] -m [MESSAGE]
+
+
+#list datasets matching a search term
+kaggle datasets list -s [KEYWORD]
+
+#download files associated with a dataset
+kaggle datasets download -d [DATASET]
