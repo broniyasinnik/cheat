@@ -57,8 +57,19 @@ git filter-branch --env-filter \
 # To remove staged and working directory changes:
 git reset --hard
 
+# To go one commit back without deleting the current changes:
+git reset --soft HEAD~
+
 # To go 2 commits back:
 git reset --hard HEAD~2
+
+# Log of commits history
+git reflog
+# To undo reset 
+git reset --hard HEAD@{1}
+
+# To reset changes in commit by creating new commit
+git revert
 
 # To revert first/initial commit on a branch:
 # Running git reset --hard HEAD~1 will give error:
