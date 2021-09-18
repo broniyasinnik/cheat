@@ -4,6 +4,9 @@ docker -d
 # To build docker container from Dockerfile with tag name
 docker build -t server:latest .
 
+#To supply enviroment vriable to docker container
+docker run -e VARIABLE=VALUE ubuntu:18
+
 # To start container with port forwarding <local>:<docker>
 docker run -p 8080:9091 server:latest
 
