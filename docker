@@ -4,11 +4,17 @@ docker -d
 # To build docker container from Dockerfile with tag name
 docker build -t server:latest .
 
-#To supply enviroment vriable to docker container
-docker run -e VARIABLE=VALUE ubuntu:18
+# To run container overriding entry point command
+docker run -it --entrypoint bash ubuntu:18.04
 
 # To start container with port forwarding <local>:<docker>
 docker run -p 8080:9091 server:latest
+
+# To supply access to local volume from docker container
+docker run -v <local_path>:</data/remote> ubunto:18
+
+# To supply enviroment vriable to docker container
+docker run -e VARIABLE=VALUE ubuntu:18
 
 # To start a container with an interactive shell:
 docker run -ti <image-name> /bin/bash
