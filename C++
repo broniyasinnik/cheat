@@ -1,0 +1,15 @@
+## Strings
+
+# When s1.find(s2) return value, it is usually used to indicate no matches.
+std::npos
+
+## Algorithms
+
+# Rearranges the elements in the range [first,last) into the next lexicographically greater permutation.
+std::next_premutation
+
+# Removes all but the first element from every consecutive group of equivalent elements in the range [first,last).
+std::unique
+
+# in limit.h there are all the macros for type limits
+INT_MAX, LONG_MAX, CHAR_MAX
