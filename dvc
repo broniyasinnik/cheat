@@ -1,0 +1,14 @@
+# initialize dvc inside a git project
+dvc init
+
+# tracking a file or directory
+dvc add data/data.xml
+
+# set up a remote storage location
+dvc remote add -d storage s3://mybucket/dvcstore
+
+# upload dvc-tracked data
+dvc push
+
+# dowload remote 
+dvc pull
