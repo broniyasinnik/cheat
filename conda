@@ -1,0 +1,19 @@
+# Get a list of all my environments
+conda info --envs
+conda info -e
+
+# Activate the new environment to use it
+conda activate snowflakes
+
+# Deactivate the environment
+conda deactivate
+
+# Delete an environment
+conda remove -n flowers --all
+
+# View list of packages and versions installed in active environment
+conda list
+
+
+
+
