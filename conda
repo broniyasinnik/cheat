@@ -1,3 +1,9 @@
+# Create new environment named py35 install Python3.5
+conda create --name py35 python=3.5
+
+# To install from requirements file
+conda install --file requirements.txt
+
 # Get a list of all my environments
 conda info --envs
 conda info -e
