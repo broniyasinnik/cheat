@@ -1,0 +1,46 @@
+# To reload zshell
+omz reload
+
+###################
+# auto jump plugin#
+##################
+
+# Jump To A Directory That Contains foo:
+j foo
+
+# Jump To A Child Directory:
+# Sometimes it's convenient to jump to a child directory (sub-directory of current directory) rather than typing out the full name.
+jc bar
+
+# Open File Manager To Directories (instead of jumping):
+jo music
+
+# Opening a file manager to a child directory is also supported:
+jco images
+
+#############
+# osx plugin#
+#############
+# Open the current directory in a new tab
+tab
+
+# Split the current terminal tab horizontally
+split_tab
+
+# Split the current terminal tab vertically
+vsplit_tab
+
+# Open the current directory in a Finder window
+ofd
+
+# Return the path of the frontmost Finder window
+pfd
+
+# Return the current Finder selection
+pfs 
+
+# cd to the current Finder directory
+cdf
+
+
+
