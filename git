@@ -142,6 +142,9 @@ git diff --no-index path/to/file/A path/to/file/B
 git fetch --all
 git reset --hard origin/master
 
+# Adding an existing Git repository as a submodule of the repository that we’re working on 
+git submodule add https://github.com/chaconinc/DbConnector
+
 # To update all submodules:
 git submodule update --init --recursive
 
