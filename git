@@ -54,6 +54,9 @@ git filter-branch --env-filter \
          export GIT_COMMITTER_DATE="Sat May 19 01:01:01 2007 -0700"
      fi'
 
+# Discard unstaged changes in working directory
+git restore .
+
 # To remove staged and working directory changes:
 git reset --hard
 

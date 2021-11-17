@@ -23,6 +23,8 @@ conda remove -n flowers --all
 # View list of packages and versions installed in active environment
 conda list
 
+# Update existing environment from local yml file
+conda env update --file local.yml --prune
 
 
 
