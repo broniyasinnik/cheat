@@ -1,0 +1,18 @@
+# Keyboard shortcuts
+[Command]+[Shift]+A - Enter Actions pallete
+[Command]+[Shift]+E - Enter Recent Locations
+
+## PyCharm ##
+<Space>+b - set breaking point
+<Space>+d - debug program
+<Space>+r - refactoring
+<Space>+o - FileStructurePopup
+<Space>+s - SelectInProjectView
+<Command>+p - Show function signature
+
+### DataGrip ###
+[Command]+[Shift]+L - Open new query console
+[Command]+[F12] - Open columns pallete
+[Command]+[F4] - View table in Database Explorer
+[Option]+[Shift]+B - Select in data base view
+[Command]+[return] - Execute query

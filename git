@@ -4,6 +4,9 @@ tags: [ vcs ]
 # To initilize new repository
 git init
 
+# To checkout one commit backwards
+git checkout HEAD~1
+
 # To set your identity:
 git config --global user.name <name>
 git config --global user.email <email>
