@@ -9,6 +9,8 @@
 <Space>+o - FileStructurePopup
 <Space>+s - SelectInProjectView
 <Command>+p - Show function signature
+<Space>+c - Stop
+<Space>+z - ToggleDistractionFreeMode
 
 ### DataGrip ###
 [Command]+[Shift]+L - Open new query console
