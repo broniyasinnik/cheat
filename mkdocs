@@ -1,0 +1,5 @@
+mkdocs new [dir-name] - Create a new project.
+mkdocs serve - Start the live reloading docs server.
+mkdocs build - Build the documnetation site.
+mkdocs -h - Print help meassage and exit
+mkdocs serve -a localhost:8000 - Serve in local host port 8000

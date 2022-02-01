@@ -1,8 +1,11 @@
 # Keyboard shortcuts
 [Command]+[Shift]+A - Enter Actions pallete
 [Command]+[Shift]+E - Enter Recent Locations
+[Option]+[Shift]+N - Enter tracker task
+[Option]+[Shift]+B - Open task description in browser
 
 ## PyCharm ##
+<Option>+<Space> - Code completion
 <Space>+b - set breaking point
 <Space>+d - debug program
 <Space>+r - refactoring
@@ -11,10 +14,12 @@
 <Command>+p - Show function signature
 <Space>+c - Stop
 <Space>+z - ToggleDistractionFreeMode
+<Shitf>+<Command>+t -Jump to test
 
 ### DataGrip ###
 [Command]+[Shift]+L - Open new query console
 [Command]+[F12] - Open columns pallete
 [Command]+[F4] - View table in Database Explorer
-[Option]+[Shift]+B - Select in data base view
+[Option]+[Shift]+B - Select in database explorer view
 [Command]+[return] - Execute query
+[Command]+[DownArrow] - Press on table name to view the contents

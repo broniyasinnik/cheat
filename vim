@@ -133,6 +133,13 @@ iB - inner block with {}
 it - inner block with <> tags
 Esc - exit visual mode
 
+# Insert Mode
+Ctrl + w - delete word before the cursor during insert mode
+Ctrl + h - delete the character before the cursor during insert mode
+Ctrl + n - insert (auto-complete) next match before the cursor during insert mode
+Ctrl + p - insert (auto-complete) previous match before the cursor during insert mode
+Ctrl + rx - insert the contents of register x
+
 # Macros
 qa - record macro a
 q - stop recording macro
