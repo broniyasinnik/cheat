@@ -1,11 +1,21 @@
 ---
 tags: [ vcs ]
 ---
-# To initilize new repository
+# A new repository can either be created locally, or an existing repository can be cloned. 
+# When a repository was initialized locally, you have to push it to GitHub afterwards.
 git init
 
-# To checkout one commit backwards
-git checkout HEAD~1
+# The git init command turns an existing directory into a new Git repository inside the folder you are running this command.
+# After using the git init command, link the local repository to an empty GitHub repository using the following command:
+git remote add origin [url]                                  # Example in next line
+git remote add upstream git@github.com:<username>/<repo>.git # Set a new repo
+git remote -v                                                # Confirm new remote repo
+git remote remove [name of the remote]			             # To delete the remote for local repository
+
+
+
+# To see configuration
+git config --list
 
 # To set your identity:
 git config --global user.name <name>
@@ -13,12 +23,14 @@ git config --global user.email <email>
 
 # To set your editor:
 git config --global core.editor <editor>
-
 # To enable color:
 git config --global color.ui true
 
-# To stage all changes for commit:
-git add --all
+################# The .gitignore file ###############################################
+# Sometimes it may be a good idea to exclude files from being tracked with Git. 
+# This is typically done in a special file named .gitignore. 
+# You can find helpful templates for .gitignore files at github.com/github/gitignore.
+######################################################################################
 
 # To stash changes locally, this will keep the changes in a separate changelist
 # called stash and the working directory is cleaned. You can apply changes
@@ -37,6 +49,9 @@ git stash pop
 # To apply any stash from the list of stashes. This does not remove the stash
 # from the stash list
 git stash apply stash@{6}
+
+# To stage all changes for commit:
+git add --all
 
 # To commit staged changes:
 git commit -m <message>
@@ -106,16 +121,18 @@ git branch -D <branch>
 # To make an exisiting branch track a remote branch:
 git branch -u upstream/foo
 
+# Switches branches by updating the index and workspace
+# to reflect the specified branch, <branch>, and updating HEAD to be <branch>.
+git switch <branch>
+
 # To see who commited which line in a file:
 git blame <file>
 
 # To sync a fork with the master repo:
-git remote add upstream git@github.com:<username>/<repo>.git # Set a new repo
-git remote -v                                                # Confirm new remote repo
-git remote remove [name of the remote]			     # To delete the remote for local repository
 git fetch upstream                                           # Get branches
 git branch -va                                               # List local - remote branches
 git checkout master                                          # Checkout local master branch
+git checkout HEAD~1                                          # To checkout one commit backwards
 git checkout -b new_branch                                   # Create and checkout a new branch
 git merge upstream/master                                    # Merge remote into local repo
 git show 83fb499                                             # Show what a commit did.

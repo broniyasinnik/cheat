@@ -17,9 +17,11 @@
 <Shitf>+<Command>+t -Jump to test
 
 ### DataGrip ###
-[Command]+[Shift]+L - Open new query console
-[Command]+[F12] - Open columns pallete
+[Command]+[Shift]+L - Open new query console.
+[Command]+[F12] - Open columns pallete.
 [Command]+[F4] - View table in Database Explorer
-[Option]+[Shift]+B - Select in database explorer view
-[Command]+[return] - Execute query
-[Command]+[DownArrow] - Press on table name to view the contents
+[Option]+[Shift]+B - Navigate to the object in the Database Explorer.
+[Command]+[return] - Execute query.
+[Command]+[DownArrow] - Press on table name to view the contents.
+[F3] - Add Bookmark.
+[Option]+[F3] - Add mnemonic bookmarke.
