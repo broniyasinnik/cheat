@@ -1,5 +1,19 @@
+######## Usefull Commands #######
+cd - (To jump to previous directory.)
+
+
 # To reload zshell
 omz reload
+
+################
+# Aliases Plugin
+# ##############
+
+# show all aliases by group.
+acs 
+
+# filter aliases by <keyword> and highlight.
+acs <keyword>
 
 ###################
 # auto jump plugin#

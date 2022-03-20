@@ -53,6 +53,8 @@ P               paste before cursor
 <Del> or x      delete a character
 dd              delete a line
 d{motion}       delete text that {motion} moves over
+gU<movement iw> Toggle to uppercase 
+gu<movement>    Toggle to lowercase
 
 # Search and replace with the `:substitute` (aka `:s`) command
 
