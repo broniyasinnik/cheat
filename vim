@@ -99,6 +99,9 @@ ctrl-w=          - make all equal size
 :ball            - open a window for all buffers
 :bunload         - removes buffer from window
 :taball          - open a tab for all buffers
+:tabm i          - move tab to position i
+:tabm +i         - move tab i positions to the right
+:tabm -i         - move tab i positions to the left
 
 # Marks and Positions
 :marks - list of marks
