@@ -57,7 +57,11 @@ git add --all
 git commit -m <message>
 
 # To edit previous commit message:
-git commit --amend
+git commit --amend -m "an updated commit message"
+
+# Make the amendment to your commit without changing its commit message.
+# For example if you forgot to add some file in staging the first time you commit.
+git commit --amend --no-edit
 
 # Git commit in the past
 git commit --date="`date --date='2 day ago'`"

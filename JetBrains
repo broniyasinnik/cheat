@@ -15,6 +15,11 @@
 <Space>+c - Stop
 <Space>+z - ToggleDistractionFreeMode
 <Shitf>+<Command>+t -Jump to test
+<Ctr>+m - Move tab to the opposite window group
+
+##IdeaVim
+<Ctr>+w+v - split window vertically
+<Ctr>+w+s - split window horizontally
 
 ### DataGrip ###
 [Command]+[Shift]+L - Open new query console.

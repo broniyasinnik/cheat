@@ -1,0 +1,4 @@
+<Command>+<shift>+C - Enter command palette.
+<Shift>+<DownArrow> - Select Cell below.
+<Ctrl>+<Shift>+<DownArrow> - Move Selected cell down.
+
