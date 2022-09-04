@@ -7,8 +7,15 @@ tmux new -s session_name
 # To rename already running session
 tmux rename-session [-t current-name] [new-name]
 
+# To rename a current window
+Ctrl-b ,
+tmux rename-window [-t current-name] [new-name]
+
 # To detach from tmux:
 Ctrl-b d
+
+# To close current window
+Ctrl-b  &
 
 # To restore tmux session:
 tmux attach

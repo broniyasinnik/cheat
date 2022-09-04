@@ -7,10 +7,16 @@ great_expectations datasource new
 # Create new expectations suite
 great_expectations suite new
 
+# List all expectations suite
+great_expectations suite list
+
+# Delete expectation suite
+great_expectations suite delete <suite_name>
+
 # Review and update the expectations create by the Profiler
-great_expectations suite edit
+great_expectations suite edit <suite_name>
 
 # Set up a Checkpint
-great_expectations checkpoint new <checkpoint name>
+great_expectations checkpoint new <checkpoint_name>
 
 

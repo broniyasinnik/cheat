@@ -20,6 +20,29 @@
 ##IdeaVim
 <Ctr>+w+v - split window vertically
 <Ctr>+w+s - split window horizontally
+### NERDTree
+ o - Open files, directories and bookmarks	
+ go - Open selected file, but leave cursor in the NERDTree
+ t - Open selected node/bookmark in a new tab	 
+ T - Same as 't' but keep the focus on the current tab	 
+ i - Open selected file in a split window 
+ gi - Same as i, but leave the cursor on the NERDTree	 
+ s - Open selected file in a new vsplit	
+ gs - Same as s, but leave the cursor on the NERDTree
+ O - Recursively open the selected directory	 
+ x - Close the current nodes parent	
+ X - Recursively close all children of the current node	
+ P - Jump to the root node	 
+ p - Jump to current nodes parent	
+ K - Jump up inside directories at the current tree depth
+ J - Jump down inside directories at the current tree depth	
+ <Ctr>+J - Jump down to next sibling of the current directory
+ <Ctr>+K - Jump up to previous sibling of the current directory	
+ r - Recursively refresh the current directory	
+ R - Recursively refresh the current root
+ m - Display the NERDTree menu
+ q - Close the NERDTree window
+ A - Zoom (maximize/minimize) the NERDTree window
 
 ### DataGrip ###
 [Command]+[Shift]+L - Open new query console.

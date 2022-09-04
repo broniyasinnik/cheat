@@ -1,0 +1,82 @@
+# To display list of all available commands:
+kubectl -h
+
+# To display an explanation of a specific command:
+kubectl command_name -h
+
+# To display complete list of supported resources:
+kubectl api-resources
+
+# To display an explanation of a specific resource:
+kubectl explain resource_name
+
+# To display an explanation of a specific field of resource:
+kubectl explain resource_name.field_name
+
+# To display list of global command-line options:
+kubectl options
+
+# To set up `kubectl` autocomplete in bash (press Tab to use):
+source <(kubectl completion bash)
+
+# To display all resources in all namespaces:
+kubectl get all -A
+
+# To order events by `creationTimestamp`:
+kubectl get events --sort-by='.metadata.creationTimestamp'
+
+# This command shows all nodes that can be used to host our applications.
+kubectl get nodes
+
+# This command looks for existing Pods
+kubectl get pods
+
+# This command get the ip address of the pod
+kubectl get po -o wide -n runai-dariod
+
+# List the current Services from our cluster:
+kubectl get services
+
+# You can list the current namespaces in a cluster using:
+kubectl get namespace
+
+# To view what containers are inside that Pod and what images are used to build those containers.
+kubectl describe pods
+
+# To find out what port was opened externally (by the NodePort option) we’ll run the:
+kubectl describe services/kubernetes-bootcamp
+
+# The Deployment created automatically a label for our Pod. With describe deployment command you can see the name of the label:
+kubectl describe deployment
+
+# We need to provide the deployment name and app image location (include the full repository url for images hosted outside Docker hub).
+kubectl create deployment kubernetes-bootcamp --image=gcr.io/google-samples/kubernetes-bootcamp:v1
+
+# To list your deployments 
+kubectl get deployments
+
+# The kubectl command can create a proxy that will forward communications into the cluster-wide, private network. The proxy can be terminated by pressing control-C and won't show any output while its running.
+kubectl proxy
+
+# To get the Pod name and store it in the POD_NAME environment variable.
+export POD_NAME=$(kubectl get pods -o go-template --template '{{range .items}}{{.metadata.name}}{{"\n"}}{{end}}')
+echo Name of the Pod: $POD_NAME
+
+# Create an environment variable called NODE_PORT that has the value of the Node port assigned:
+export NODE_PORT=$(kubectl get services/kubernetes-bootcamp -o go-template='{{(index .spec.ports 0).nodePort}}')
+echo NODE_PORT=$NODE_PORT
+
+# Anything that the application would normally send to STDOUT becomes logs for the container within the Pod. We can retrieve these logs using:
+kubectl logs $POD_NAME
+
+# We can execute commands directly on the container once the Pod is up and running. For this, we use the exec command and use the name of the Pod as a parameter. Let’s list the environment variables:
+kubectl exec $POD_NAME -- env
+
+# Let’s start a bash session in the Pod’s container:
+kubectl exec -ti $POD_NAME -- bash
+
+# To apply a new job to kubectl
+kubectl apply -f ./runaijob-dgl.yaml
+
+# Delete a pod using the type and name specified in pod.json
+kubectl delete -f ./pod.json                                      

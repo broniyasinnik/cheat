@@ -1,2 +1,5 @@
-# To cut out the third field of text or stdoutput that is delimited by a #:
-cut -d# -f3
+# To extract the third field of text or stdoutput that is delimited by a #:
+cut -d, -f3 <name.csv>
+
+# To remove the third field of text or stdoutput that is delimited by a #:
+cut -d, -f3 --complement <name.csv>

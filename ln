@@ -1,0 +1,5 @@
+# To create a symlink:
+ln -s <path to the file/folder to be linked> <the path of the link to be created>
+
+# To symlink, while overwriting existing destination files
+ln -sf <source-location> <symlink-location>

@@ -1,0 +1,39 @@
+Shift + Enter - run the current cell, select below
+Shift + Tab - Function Signature
+Shift + Up - extend selected cells above
+Shift + Down - extend selected cells below
+Cmd + Enter - run selected cells
+Option + Enter - run the current cell, insert below
+Cmd + S -  save and checkpoint
+Enter - take you into edit mode
+Up - select cell above
+Down - select cell below
+H - show all shortcuts
+A - insert cell above
+B - insert cell below
+X - cut selected cells
+C - copy selected cells
+V - paste cells below
+Shift + V - paste cells above
+D, D (press the key twice) - delete selected cells
+<Cmd>+Z - undo cell deletion
+S - Save and Checkpoint
+Y - change the cell type to Code
+M - change the cell type to Markdown
+P - open the command palette.
+Shift + Space - scroll notebook up
+Space - scroll notebook down
+Esc take you into command mode
+Tab code completion or indent
+Cmd + ] - indent
+Cmd + [ - dedent
+Cmd + A - select all
+Cmd + Z - undo
+Cmd + Shift + Z or Ctrl + Y - redo
+Cmd + Home - go to cell start
+Cmd + End - go to cell end
+Cmd + Left - go one word left
+Cmd + Right - go one word right
+Cmd + Shift + P - open the command palette
+Down move cursor down
+Up move cursor up
